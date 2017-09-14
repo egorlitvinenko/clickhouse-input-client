@@ -36,5 +36,3 @@ public class ChLineEventHandler implements EventHandler<LineEvent> {
 
 }
 ```
-
-License Apache 2.0
