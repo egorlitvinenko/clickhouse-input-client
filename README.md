@@ -1,6 +1,6 @@
 <a href="https://github.com/yandex/clickhouse-jdbc">clickhouse-jdbc</a> is a JDBC wrapper, which uses Http Client from Apache Http Components to write to <a href="https://clickhouse.yandex">Clickhouse</a>.
 
-This code is externalized from clickhouse-jdbc and modified a little bit to reduce impact on GC.
+Http communication is externalized from clickhouse-jdbc and modified a little bit to reduce impact on GC.
 
 It is used in my <a href="https://github.com/egorlitvinenko/testparsing">experiment</a>.
 Basic usage from there:
