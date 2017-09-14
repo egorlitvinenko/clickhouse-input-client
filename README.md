@@ -1,4 +1,4 @@
-<a href="https://github.com/yandex/clickhouse-jdbc">clickhouse-jdbc</a> is a JDBC wrapper, which uses Http Client of Clickhouse.
+<a href="https://github.com/yandex/clickhouse-jdbc">clickhouse-jdbc</a> is a JDBC wrapper, which uses Http Client from Apache Http Components to write to Clickhouse.
 
 This code is externalized from clickhouse-jdbc and modified a little bit to reduce impact on GC.
 
