@@ -36,3 +36,5 @@ public class ChLineEventHandler implements EventHandler<LineEvent> {
 
 }
 ```
+
+p.s. If you use this library or clickhouse-jdbc it is important to configure <a href="https://github.com/egorlitvinenko/testparsing/tree/master/testdisruptor/src/main/resources">logger properties</a>.
