@@ -1,7 +1,5 @@
 package org.egorlitvinenko.clickhouse.ic;
 
-import org.egorlitvinenko.testdisruptor.clickhousestream.Preconditions;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
