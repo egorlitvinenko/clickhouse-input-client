@@ -29,9 +29,10 @@ public class ClickhousePreparedStream implements PreparedStream {
         byteBuffer.put(LINE_END);
     }
 
-    public void appendValue(String value) {
+    @Override
+    public void appendValue(String value, char valueSplitter) {
         byteBuffer.put(value.getBytes(StandardCharsets.UTF_8));
-        byteBuffer.put(VALUE_SPLITTER);
+        byteBuffer.put((byte) valueSplitter);
     }
 
     public void appendLastValue(String value) {

@@ -5,9 +5,6 @@ package org.egorlitvinenko.clickhouse.ic;
  */
 public class BufferPreparedStream implements PreparedStream {
 
-    private static final byte LINE_END = '\n';
-    private static final byte VALUE_SPLITTER = '\t';
-
     private final char[] buffer;
 
     private int position = 0;
@@ -20,14 +17,14 @@ public class BufferPreparedStream implements PreparedStream {
     public void appendLastValue(String value) {
         value.getChars(0, value.length(), buffer, position);
         position += value.length();
-        buffer[position++] = LINE_END;
+        buffer[position++] = PreparedStream.LINE_END;
     }
 
     @Override
-    public void appendValue(String value) {
+    public void appendValue(String value, char valueSplitter) {
         value.getChars(0, value.length(), buffer, position);
         position += value.length();
-        buffer[position++] = VALUE_SPLITTER;
+        buffer[position++] = valueSplitter;
     }
 
     @Override
