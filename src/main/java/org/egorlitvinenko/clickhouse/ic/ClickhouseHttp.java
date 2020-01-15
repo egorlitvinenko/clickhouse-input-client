@@ -114,6 +114,14 @@ public class ClickhouseHttp {
             result.add(new BasicNameValuePair("query", sql));
         }
 
+        if (null != properties.getUser()) {
+            result.add(new BasicNameValuePair("user", properties.getUser()));
+        }
+
+        if (null != properties.getPassword()) {
+            result.add(new BasicNameValuePair("password", properties.getPassword()));
+        }
+
         return result;
     }
 
